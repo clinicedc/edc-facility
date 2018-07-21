@@ -1,3 +1,6 @@
+|pypi| |travis| |coverage|
+
+
 edc-facility
 ------------
 
@@ -50,4 +53,16 @@ If holidays are entered (in model ``Holiday``) and the appointment lands on a ho
     print(available_datetime)  # 2015-09-29 00:00:00, TU
 
 The maximum number of possible scheduling slots per day is configured in ``app_config``. As with the holiday example above, the appointment date will be incremented forward to a day with an available slot.
+
+
+
+.. |pypi| image:: https://img.shields.io/pypi/v/edc-facility.svg
+    :target: https://pypi.python.org/pypi/edc-facility
+    
+.. |travis| image:: https://travis-ci.org/clinicedc/edc-facility.svg?branch=develop
+    :target: https://travis-ci.org/clinicedc/edc-facility
+    
+.. |coverage| image:: https://coveralls.io/repos/github/clinicedc/edc-facility/badge.svg?branch=develop
+    :target: https://coveralls.io/github/clinicedc/edc-facility?branch=develop
+[![Build Status](https://travis-ci.com/ambition-trial/edc-facility.svg?branch=develop)](https://travis-ci.com/ambition-trial/edc-facility) [![Coverage Status](https://coveralls.io/repos/github/ambition-trial/edc-facility/badge.svg?branch=develop)](https://coveralls.io/github/ambition-trial/edc-facility?branch=develop)
 
