@@ -26,6 +26,7 @@ setup(
     long_description=README,
     zip_safe=False,
     keywords='django pandas edc clinic facility',
+    install_requires=['edc_base', 'tqdm'],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
