@@ -1,1 +1,1 @@
-edc_facility
+edc-auth
