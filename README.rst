@@ -1,4 +1,4 @@
-|pypi| |travis| |coverage|
+|pypi| |travis| |codecov| |downloads|
 
 
 edc-facility
@@ -62,6 +62,8 @@ The maximum number of possible scheduling slots per day is configured in ``app_c
 .. |travis| image:: https://travis-ci.org/clinicedc/edc-facility.svg?branch=develop
     :target: https://travis-ci.org/clinicedc/edc-facility
     
-.. |coverage| image:: https://coveralls.io/repos/github/clinicedc/edc-facility/badge.svg?branch=develop
-    :target: https://coveralls.io/github/clinicedc/edc-facility?branch=develop
+.. |codecov| image:: https://codecov.io/gh/clinicedc/edc-facility/branch/develop/graph/badge.svg
+  :target: https://codecov.io/gh/clinicedc/edc-facility
 
+.. |downloads| image:: https://pepy.tech/badge/edc-facility
+   :target: https://pepy.tech/project/edc-facility
