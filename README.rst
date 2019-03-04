@@ -4,6 +4,16 @@
 edc-facility
 ------------
 
+Loading holidays
+++++++++++++++++
+
+To load the list of holidays into the system:
+
+.. code-block:: python
+
+    python manage.py import_holidays
+
+
 Customizing appointment scheduling by ``Facility``
 ++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -25,7 +35,7 @@ To schedule an appointment that falls on a day that the clinic is open, isn't a 
 
 .. code-block:: python
 
-    from edc_base.utils import get_utcnow
+    from edc_utils import get_utcnow
     from .facility import Facility
     
     suggested_datetime = get_utcnow()
