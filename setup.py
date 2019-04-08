@@ -33,7 +33,6 @@ setup(
     keywords='django pandas edc clinic facility',
     install_requires=[
         'edc-auth',
-        'edc_base',
         'tqdm'],
     classifiers=[
         'Environment :: Web Environment',
