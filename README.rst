@@ -15,7 +15,7 @@ To load the list of holidays into the system:
 
 
 Customizing appointment scheduling by ``Facility``
-++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Appointment scheduling can be customized per ``facility`` or clinic:
 
