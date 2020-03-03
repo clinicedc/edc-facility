@@ -30,10 +30,8 @@ setup(
     description='Define clinic facilities for clinicedc/edc projects',
     long_description=README,
     zip_safe=False,
-    keywords='django pandas edc clinic facility',
-    install_requires=[
-        'edc-auth',
-        'tqdm'],
+    keywords='django edc clinic facility',
+    install_requires=['tqdm'],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',

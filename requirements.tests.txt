@@ -1,3 +1,0 @@
-edc-auth
-edc-notification
-edc-test-utils
