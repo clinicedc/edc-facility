@@ -8,7 +8,6 @@ from django.test.runner import DiscoverRunner
 from edc_test_utils import DefaultTestSettings
 from os.path import abspath, dirname
 
-
 app_name = 'edc_facility'
 base_dir = dirname(abspath(__file__))
 
@@ -24,8 +23,6 @@ DEFAULT_SETTINGS = DefaultTestSettings(
         'django.contrib.messages',
         'django.contrib.staticfiles',
         'django.contrib.sites',
-        'edc_auth.apps.AppConfig',
-        'edc_notification.apps.AppConfig',
         'edc_facility.apps.AppConfig',
     ],
     add_dashboard_middleware=True,
