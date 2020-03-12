@@ -77,8 +77,8 @@ System checks
 .. |pypi| image:: https://img.shields.io/pypi/v/edc-facility.svg
     :target: https://pypi.python.org/pypi/edc-facility
     
-.. |travis| image:: https://travis-ci.org/clinicedc/edc-facility.svg?branch=develop
-    :target: https://travis-ci.org/clinicedc/edc-facility
+.. |travis| image:: https://travis-ci.com/clinicedc/edc-facility.svg?branch=develop
+    :target: https://travis-ci.com/clinicedc/edc-facility
     
 .. |codecov| image:: https://codecov.io/gh/clinicedc/edc-facility/branch/develop/graph/badge.svg
   :target: https://codecov.io/gh/clinicedc/edc-facility
