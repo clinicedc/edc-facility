@@ -18,7 +18,6 @@ edc-dashboard
 edc-data-manager
 edc-device
 edc-export
-edc-facility
 edc-fieldsets
 edc-form-label
 edc-form-validators
