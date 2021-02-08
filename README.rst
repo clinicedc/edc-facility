@@ -1,4 +1,4 @@
-|pypi| |travis| |codecov| |downloads|
+|pypi| |actions| |codecov| |downloads|
 
 
 edc-facility
@@ -37,7 +37,7 @@ To schedule an appointment that falls on a day that the clinic is open, isn't a 
 
     from edc_utils import get_utcnow
     from .facility import Facility
-    
+
     suggested_datetime = get_utcnow()
     available_datetime = facility.available_datetime(suggested_datetime)
 
@@ -53,7 +53,7 @@ If holidays are entered (in model ``Holiday``) and the appointment lands on a ho
 
     from .facility import Facility
     from .models import Holiday
-    
+
     Holiday.objects.create(
         name='Id-ul-Adha (Feast of the Sacrifice)',
         date=date(2015, 9, 24)
@@ -76,10 +76,10 @@ System checks
 
 .. |pypi| image:: https://img.shields.io/pypi/v/edc-facility.svg
     :target: https://pypi.python.org/pypi/edc-facility
-    
-.. |travis| image:: https://travis-ci.com/clinicedc/edc-facility.svg?branch=develop
-    :target: https://travis-ci.com/clinicedc/edc-facility
-    
+
+.. |actions| image:: https://github.com/clinicedc/edc-facility/workflows/build/badge.svg?branch=develop
+  :target: https://github.com/clinicedc/edc-facility/actions?query=workflow:build
+
 .. |codecov| image:: https://codecov.io/gh/clinicedc/edc-facility/branch/develop/graph/badge.svg
   :target: https://codecov.io/gh/clinicedc/edc-facility
 
