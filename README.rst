@@ -50,6 +50,7 @@ If holidays are entered (in model ``Holiday``) and the appointment lands on a ho
     from dateutil.relativedelta import TU, TH
     from django.conf import settings
     from django.utils import timezone
+    from zoneifo import ZoneInfo
 
     from .facility import Facility
     from .models import Holiday
@@ -58,7 +59,7 @@ If holidays are entered (in model ``Holiday``) and the appointment lands on a ho
         name='Id-ul-Adha (Feast of the Sacrifice)',
         date=date(2015, 9, 24)
     )
-    suggested_datetime = timezone.make_aware(datetime(2015, 9, 24), timezone=pytz.utc)  # TH
+    suggested_datetime = datetime(2015, 9, 24, tzinfo=ZoneInfo("UTC"))  # TH
     available_datetime = facility.available_datetime(suggested_datetime)
     print(available_datetime)  # 2015-09-29 00:00:00, TU
 
