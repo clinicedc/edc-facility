@@ -74,6 +74,53 @@ System checks
 * ``edc_facility.004`` No Holidays have been defined for this country.
 
 
+HealthFacility model
+++++++++++++++++++++
+
+The ``HealthFacility`` model is used by ``edc-next-appointment`` when reporting the next routine
+visit for a participants in a trial that follow the participant's
+routine clinic schedule. See ``edc-next-appointment``.
+
+If you need to customize the model, declare the concrete model locally in your app. You can use the mixins to build
+your own classes.
+
+For example:
+
+.. code-block:: python
+
+    # models.py
+    class HealthFacility(SiteModelMixin, HealthFacilityModelMixin, BaseUuidModel):
+
+        objects = Manager()
+        on_site = CurrentSiteManager()
+        history = HistoricalRecords()
+
+        class Meta(SiteModelMixin.Meta, BaseUuidModel.Meta):
+            verbose_name = "Health Facility"
+            verbose_name_plural = "Health Facilities"
+
+.. code-block:: python
+
+    # forms.py
+    class HealthFacilityForm(FormValidatorMixin, forms.ModelForm):
+        form_validator_cls = HealthFacilityFormValidator
+
+        class Meta:
+            model = HealthFacility
+            fields = "__all__"
+
+.. code-block:: python
+
+    # admin.py
+    @admin.register(HealthFacility, site=intecomm_facility_admin)
+    class HealthFacilityAdmin(
+        HealthFacilityModelAdminMixin,
+        SiteModelAdminMixin,
+        BaseModelAdminMixin,
+    ):
+        form = HealthFacilityForm
+
+
 
 .. |pypi| image:: https://img.shields.io/pypi/v/edc-facility.svg
     :target: https://pypi.python.org/pypi/edc-facility
