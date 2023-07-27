@@ -78,8 +78,10 @@ HealthFacility model
 ++++++++++++++++++++
 
 The ``HealthFacility`` model is used by ``edc-next-appointment`` when reporting the next routine
-visit for a participants in a trial that follow the participant's
-routine clinic schedule. See ``edc-next-appointment``.
+appointment for a participant. This is important for trials that collect data at routine clinic appointments
+not set by the research staff or defined by the protocol.
+
+See also ``edc-next-appointment``.
 
 If you need to customize the model, declare the concrete model locally in your app. You can use the mixins to build
 your own classes.
