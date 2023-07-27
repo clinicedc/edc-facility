@@ -84,6 +84,11 @@ routine clinic schedule. See ``edc-next-appointment``.
 If you need to customize the model, declare the concrete model locally in your app. You can use the mixins to build
 your own classes.
 
+You'll also need to update settings to tell ``edc_facility`` where the custom model is::
+
+    EDC_FACILITY_HEALTH_FACILITY_MODEL = "myapp.healthfacility"
+
+
 For example:
 
 .. code-block:: python
