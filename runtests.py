@@ -27,6 +27,7 @@ DEFAULT_SETTINGS = DefaultTestSettings(
         "django_crypto_fields.apps.AppConfig",
         "django_revision.apps.AppConfig",
         "edc_auth.apps.AppConfig",
+        "edc_metadata.apps.AppConfig",
         "edc_navbar.apps.AppConfig",
         "edc_notification.apps.AppConfig",
         "edc_dashboard.apps.AppConfig",
