@@ -43,7 +43,7 @@ DEFAULT_SETTINGS = DefaultTestSettings(
     EDC_NAVBAR_VERIFY_ON_LOAD=IGNORE,
     EDC_AUTH_SKIP_SITE_AUTHS=True,
     EDC_AUTH_SKIP_AUTH_UPDATER=True,
-    LOGIN_REDIRECT_URL="edc_facility_admin:index",
+    LOGIN_REDIRECT_URL="edc_facility:home_url",
     add_dashboard_middleware=True,
     use_test_urls=True,
 ).settings
