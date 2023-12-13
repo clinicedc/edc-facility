@@ -68,7 +68,7 @@ The maximum number of possible scheduling slots per day is configured in ``app_c
 
 System checks
 +++++++++++++
-* ``edc_facility.001`` Holiday file not found! settings.HOLIDAY_FILE not defined.
+* ``edc_facility.001`` Holiday file not set! settings.HOLIDAY_FILE not defined.
 * ``edc_facility.002`` Holiday file not found.
 * ``edc_facility.003`` Holiday table is empty. Run management command 'import_holidays'.
 * ``edc_facility.004`` No Holidays have been defined for this country.
